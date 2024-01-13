@@ -31,15 +31,14 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
-
-    transform: width .3s, height .3s;
+    transform: translate(-50%,-50%);
+    transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
@@ -72,15 +71,38 @@ div#forumalario p{
 
 form div.campo{
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: 5px 0 
 }
 
 form label {
     display: none;
+}
+
+div.campo #icones{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input:focus-within{
+    background-color: white;
+}
+
+div.campo input{
+    background-color: #05d3cc;
+    font-size: 1em;
+    width:  calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 7px;
+    padding: 1px;
+    transform: translateY(-13px);
 }
 
 div > input[type=submit]{
@@ -91,7 +113,9 @@ div > input[type=submit]{
     background-color: #49a09d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 div > input:hover{
