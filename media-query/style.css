@@ -9,7 +9,7 @@
         width: 80vw;
     }
     section#login div#imagem{
-        float: left;
+        float: left; /* Mecher na imagem! */
         width: 30%;
         height: 100%;
       
@@ -25,17 +25,17 @@
     body{
         background-image: linear-gradient(to top, #49a09d, #592c82);
     }
-    
+
     section#login{
         width: 990px;
     }
     section#login div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
     section#login div#formulario{
-        float: right;
+        float: left;
         width: 50%;
     }
     
